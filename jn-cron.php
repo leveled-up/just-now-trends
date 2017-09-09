@@ -65,7 +65,7 @@ foreach($result["items"] as $video) {
   $videos["items"][] = array(
     "id" => $video["id"],
     "link" => "https://youtu.be/{$video[id]}",
-    "mp3" => "https://www.youtubeinmp3.com/fetch/?video=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D{$video[id]}"
+    "mp3" => "https://www.youtubeinmp3.com/fetch/?video=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D{$video[id]}",
     "thumbnail" => $video["snippet"]["thumbnails"]["standard"],
     "title" => $video["snippet"]["title"],
     "channel" => $video["snippet"]["channelTitle"]
