@@ -77,7 +77,7 @@ foreach($result["items"] as $video) {
 $videos_str = json_encode($videos);
 
 if($archive and is_dir($archive_dir) and file_exists($target_path))
-  if(!rename($target_path, $archive_dir.filemtime($target_path).".json")
+  if(!rename($target_path, $archive_dir.filemtime($target_path).".json"))
     exit("500; Archival Failed");
 
 if(!file_put_contents($target_path, $videos_str))
