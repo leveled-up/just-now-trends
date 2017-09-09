@@ -13,7 +13,7 @@ if(!isset($videos["refresh_date"]))
 
 $current_time = time();
 $time = $current_time - $videos["refresh_date"];
-$time_str = "This Music Video was Trending $time Seconds ago.";
+$time_str = "trending $time seconds ago";
 
 // Generate Table
 $table = "<table class=\"table\">";
@@ -41,7 +41,7 @@ foreach($videos["items"] as $video) {
         </span>
 
         <br /> <br />
-        <div class=\"btn-group\">
+        <div class=\"btn-group btn-group-sm\">
           <a href=\"{$video[link]}\" target=\"_blank\" class=\"btn btn-danger\">Watch <i class=\"fa fa-youtube-play\"></i></a>
           <a href=\"{$video[mp3]}\" target=\"\" class=\"btn btn-default\">Download MP3 <i class=\"fa fa-external-link\"></i></a>
         </div>
