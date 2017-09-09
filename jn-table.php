@@ -13,13 +13,14 @@ if(!isset($videos["refresh_date"]))
 
 $current_time = time();
 $time = $current_time - $videos["refresh_date"];
-$time_str = "trending $time seconds ago";
+$time_str = "trending {$time}s ago";
 
 // Generate Table
 $table = "<table class=\"table\">";
 
-foreach($videos["items"] as $video) {
+foreach($videos["items"] as $key => $video) {
 
+  $num = $key+1;
   $table_item = "<tr>
     <td>
       <center>
@@ -37,13 +38,13 @@ foreach($videos["items"] as $video) {
           </a>
         </b> <br />
         <span style=\"color: grey;\">
-          $time_str
+          #$num $time_str
         </span>
 
         <br /> <br />
-        <div class=\"btn-group btn-group-sm\">
+        <div class=\"btn-group btn-group-xs\">
           <a href=\"{$video[link]}\" target=\"_blank\" class=\"btn btn-danger\">Watch <i class=\"fa fa-youtube-play\"></i></a>
-          <a href=\"{$video[mp3]}\" target=\"\" class=\"btn btn-default\">Download MP3 <i class=\"fa fa-external-link\"></i></a>
+          <a href=\"{$video[mp3]}\" target=\"\" class=\"btn btn-default\">Download <i class=\"fa fa-external-link\"></i></a>
         </div>
       </center>
     </td>
