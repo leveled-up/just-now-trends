@@ -26,6 +26,8 @@ $base_url = "https://www.googleapis.com/youtube/v3/videos?key=".$keys["yt_api"];
 $params = array(
   "part" => "snippet",
   "chart" => "mostPopular",
+  // 10 = Music (for others: https://developers.google.com/youtube/v3/docs/videoCategories)
+  "videoCategoryId" => 10,
   // You may customize your region here (US for global)
   "regionCode" => "US",
   // Top-x-Charts (specify "x" below)
