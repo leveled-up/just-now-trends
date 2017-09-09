@@ -24,7 +24,7 @@ foreach($videos["items"] as $video) {
     <td>
       <center>
         <a href=\"{$video[link]}\" target=\"_blank\">
-          <img src=\"{$video[thumbnail]}\" alt=\"Thumbnail\" width=\"90%\" />
+          <img src=\"{$video[thumbnail]}\" alt=\"Thumbnail\" width=\"128px\" />
         </a>
       </center>
     </td>

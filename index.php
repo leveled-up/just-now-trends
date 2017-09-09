@@ -29,17 +29,24 @@ $title = "JustNowTrends";
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <span style="font-size: large; color: blue;"><?=$title?></span>
+        <span style="font-size: larger;">
+          <a href=""><?=$title?></a>
+        </span>
       </div>
       <div class="col-sm-8">
         <p><?=$title?> is an online platform that lets you see the latest music trends from <a href="https://www.youtube.com">YouTube</a> almost real-time. If there are any questions, feel free to <a href="mailto:<?=$mail?>">contact us</a>.</p>
       </div>
     </div>
+    <br /> <br />
 
     <?php include("jn-table.php"); ?>
 
+    <br /> <br />
+
   </div>
-  <div class="footer navbar-fixed-bottom">
-    &copy; RunStorage Technologies &middot; <i>YouTube</i> is a registered trademark of <i>YouTube, LLC</i>.
+  <div class="footer">
+    <center>
+      &copy; RunStorage Technologies &middot; <i>YouTube</i> is a registered trademark of <i>YouTube, LLC</i>.
+    </center>
   </div>
 </body>
