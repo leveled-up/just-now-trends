@@ -84,3 +84,5 @@ if($archive and is_dir($archive_dir) and file_exists($target_path))
 
 if(!file_put_contents($target_path, $videos_str))
   exit("500; Saving to $target_path Failed");
+
+exit("Done.");
