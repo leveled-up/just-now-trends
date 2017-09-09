@@ -22,25 +22,29 @@ foreach($videos["items"] as $video) {
 
   $table_item = "<tr>
     <td>
-      <a href=\"{$video[link]}\" target=\"_blank\">
-        <img src=\"{$video[thumbnail]}\" alt=\"Thumbnail\" />
-      </a>
+      <center>
+        <a href=\"{$video[link]}\" target=\"_blank\">
+          <img src=\"{$video[thumbnail]}\" alt=\"Thumbnail\" width=\"90%\" />
+        </a>
+      </center>
     </td>
     <td>
-    <b>
-      <a href=\"{$video[link]}\" target=\"_blank\">
-        {$video[channel]}<br />
-        {$video[title]}
-      </a>
-    </b> <br />
-    <span style=\"color: grey;\">
-      $time_str
-    </span>
+      <center>
+        <b>
+          <a href=\"{$video[link]}\" target=\"_blank\">
+            {$video[channel]}<br />
+            {$video[title]}
+          </a>
+        </b> <br />
+        <span style=\"color: grey;\">
+          $time_str
+        </span>
 
-    <div class=\"btn-group\">
-      <a href=\"{$video[link]}\" target=\"_blank\" class=\"btn btn-danger\">Watch <i class=\"fa fa-youtube-play\"></i></a>
-      <a href=\"{$video[mp3]}\" target=\"\" class=\"btn btn-default\">Download MP3 <i class=\"fa fa-external-link\"></i></a>
-    </div>
+        <div class=\"btn-group\">
+          <a href=\"{$video[link]}\" target=\"_blank\" class=\"btn btn-danger\">Watch <i class=\"fa fa-youtube-play\"></i></a>
+          <a href=\"{$video[mp3]}\" target=\"\" class=\"btn btn-default\">Download MP3 <i class=\"fa fa-external-link\"></i></a>
+        </div>
+      </center>
     </td>
   </tr>";
   $table .= $table_item;
