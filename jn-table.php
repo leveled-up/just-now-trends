@@ -40,6 +40,7 @@ foreach($videos["items"] as $video) {
           $time_str
         </span>
 
+        <br /> <br />
         <div class=\"btn-group\">
           <a href=\"{$video[link]}\" target=\"_blank\" class=\"btn btn-danger\">Watch <i class=\"fa fa-youtube-play\"></i></a>
           <a href=\"{$video[mp3]}\" target=\"\" class=\"btn btn-default\">Download MP3 <i class=\"fa fa-external-link\"></i></a>
