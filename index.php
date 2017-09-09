@@ -51,5 +51,7 @@ $mail = "support@example.com";
     <center>
       &copy; RunStorage Technologies &middot; <i>YouTube</i> is a registered trademark of <i>YouTube, LLC</i>.
     </center>
+
+    <br /> <br />
   </div>
 </body>
