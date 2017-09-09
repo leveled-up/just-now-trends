@@ -3,6 +3,7 @@
 // (c) 2017 RunStorage Technologies
 
 $title = "JustNowTrends";
+$mail = "support@example.com";
 ?>
 <!doctype html>
 <head>
@@ -29,20 +30,22 @@ $title = "JustNowTrends";
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <span style="font-size: larger;">
-          <a href=""><?=$title?></a>
+        <span style="font-size: x-large;">
+          <center>
+            <a href=""><?=$title?></a>
+            <br />
+          </center>
         </span>
       </div>
       <div class="col-sm-8">
         <p><?=$title?> is an online platform that lets you see the latest music trends from <a href="https://www.youtube.com">YouTube</a> almost real-time. If there are any questions, feel free to <a href="mailto:<?=$mail?>">contact us</a>.</p>
       </div>
     </div>
-    <br /> <br />
+    <br />
 
     <?php include("jn-table.php"); ?>
 
-    <br /> <br />
-
+    <br /> <hr />
   </div>
   <div class="footer">
     <center>
