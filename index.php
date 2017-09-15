@@ -51,7 +51,10 @@ $mail = "support@example.com";
     <center>
       &copy; RunStorage Technologies &middot; <i>YouTube</i> is a registered trademark of <i>YouTube, LLC</i>.
 
-      <br /><img src="https://developers.google.com/youtube/images/developed-with-youtube-sentence-case-dark.png" height="80px" />
+      <br />
+      <a href="https://www.youtube.com/feed/trending">
+        <img src="https://developers.google.com/youtube/images/developed-with-youtube-sentence-case-dark.png" height="80px" />
+      </a>
     </center>
     <br />
   </div>
